@@ -18,7 +18,7 @@ app.set('view engine', 'ejs')
 
 
 app.get('/', function(req, res){
-    res.send("sei student")
+    res.send('<h1>"sei student"</h1>')
 })
 
 app.get('/home', function(req, res){
