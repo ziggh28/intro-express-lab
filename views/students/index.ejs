@@ -1,0 +1,15 @@
+body>
+  <h1>student attendence</h1>
+  <% if(error) { %>
+    <h2><%= error %></h2>
+  <% } %>
+  <ul>
+    <% students.forEach(function(student) { %>
+      <li>
+        <%= student.text %>
+          - 
+        <%= student.here ? 'here' : 'absent' %>
+      </li>
+    <% }) %>
+  </ul>
+</body>
